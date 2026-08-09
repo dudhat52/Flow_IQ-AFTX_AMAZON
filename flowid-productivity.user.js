@@ -4,6 +4,7 @@
 // @version      1.2
 // @description  Calculates hourly scan productivity and overall hourly average
 // @match        https://qifcr.na.aftx.amazonoperations.app/XYY1/results*
+// @author       Dish Dudhat ddudhat@id-logistics.com (XYY1)
 // @grant        none
 // @run-at       document-idle
 // ==/UserScript==

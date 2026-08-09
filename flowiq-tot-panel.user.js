@@ -5,6 +5,7 @@
 // @description  Shift selector below Inventory History
 // @match        https://qifcr.na.aftx.amazonoperations.app/XYY1/results*
 // @grant        none
+// @author       Dish Dudhat ddudhat@id-logistics.com (XYY1)
 // @run-at       document-idle
 // ==/UserScript==
 
