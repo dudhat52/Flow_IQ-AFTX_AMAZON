@@ -222,18 +222,6 @@ These are the problems this kind of tool has to solve. They describe the enginee
 
 ---
 
-## Potential improvements
-
-- **Test suite.** Extract the calculation logic into pure functions and cover them with unit tests using synthetic fixtures (duplicate timestamps, midnight crossover, empty shifts).
-- **Configuration object.** Move thresholds and shift boundaries into one documented config instead of constants spread across files.
-- **Export.** Let the reviewer export results to CSV for a report.
-- **Resilient selectors.** Centralise DOM selectors in one module so a markup change is a one-line fix.
-- **Clear naming.** Standardise file names (`flowid-` versus `flowiq-`, `recive` versus `receive`) and use consistent `.user.js` suffixes.
-- **Version headers.** Add `@version` metadata so updates are traceable.
-- **Documentation of metrics.** A short `METRICS.md` that defines every calculation precisely.
-
----
-
 ## Repository contents
 
 Verified from the repository file list:
@@ -249,18 +237,3 @@ Flow_IQ-AFTX_AMAZON/
 ├── flowiq-tot-engine.user.js
 └── flowiq-tot-panel.user.js
 ```
-
----
-
-## Owner verification checklist
-
-Complete this before publishing, then delete the HTML comment at the top and this section.
-
-- [ ] Open each script and confirm it implements the feature listed in the table.
-- [ ] Confirm what `flowiq-time-duplicator.user.js` does. The name could mean handling duplicate timestamps or something different.
-- [ ] Confirm what `flowiq-recive.user.js` does and whether it is the exception detector.
-- [ ] Confirm why `flowiq-cage-counter.js` lacks the `.user.js` suffix (helper module, or run separately).
-- [ ] Replace the illustrative 5-minute threshold with a note that the real value is configurable, without publishing internal rules.
-- [ ] Search every file for `fetch`, `XMLHttpRequest`, `GM_xmlhttpRequest`, `localStorage`, and `GM_setValue` to confirm what is stored or sent anywhere.
-- [ ] Search every file for internal URLs, site codes, employee names or IDs, and remove them.
-- [ ] Confirm you are permitted to keep this repository public.
